@@ -41,6 +41,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
 .btn{border:1px solid var(--border);background:transparent;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer}
 .btn.primary{background:var(--accent);color:white;border-color:transparent}
 .grid{display:grid;grid-template-columns:1fr;gap:28px}
@@ -54,4 +55,4 @@ section h2{font-size:20px;margin:0 0 8px;font-weight:700}
 .item-head h3{margin:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--border)}
-footer{padding:24px 0 40px}}
+footer{padding:24px 0 40px}
