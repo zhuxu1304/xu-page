@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// For a custom domain (CNAME), base can remain '/'
+// vite.config.js
 export default defineConfig({
-  plugins: [react()],
-  base: '/',
-  build: { outDir: 'dist' }
-});
+    plugins: [react()],
+    base: '/xu-page/',   // repo name
+    build: { outDir: 'dist' }
+})
