@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xu Zhu — CV</title>
+  <meta name="description" content="Xu Zhu's resume and portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../Downloads/github-pages-cv-2/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="id-block">
+      <h1>Xu Zhu</h1>
+      <p class="title">Computer Science Student @ TUM • Working Student (Software Development)</p>
+      <p class="muted"><a href="mailto:zhuxu1304@gmail.com">zhuxu1304@gmail.com</a></p>
+      <div class="actions">
+        <a class="btn primary" href="../../Downloads/github-pages-cv-2/cv.pdf" download>⬇️ Download PDF</a>
+        <button id="themeToggle" class="btn">🌙 Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Working Student – Software Development</h3>
+          <span>CHECK24 · Oct 2024 — present</span>
+        </div>
+        <ul>
+          <li>Full-stack development in an agile team</li>
+          <li>React (frontend) and Spring Boot (backend)</li>
+          <li>Implement features, fix bugs, refactor modules</li>
+          <li>Support code reviews, testing, and code quality improvements</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Supply Chain Assistant</h3>
+          <span>IGB GmbH · Jul 2021</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Statistical Assistant</h3>
+          <span>Kreisverwaltung Kusel · Oct 2018</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>B.Sc. Computer Science</h3>
+          <span>Technical University of Munich (TUM) · Oct 2023 — present · avg grade 1.0</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-head">
+          <h3>Abitur & Intermediate School Certificate</h3>
+          <span>Siebenpfeiffer-Gymnasium Kusel · 2017 — 2023 · Final grade 1.2</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Honors & Awards</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Deutschlandstipendium</h3>
+          <span>TUM · since Oct 2024</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-head">
+          <h3>best.in.tum (Top ≈2% in CIT)</h3>
+          <span>School of Computation, Information and Technology · Jun 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Java</span>
+        <span class="chip">C++</span>
+        <span class="chip">Python</span>
+        <span class="chip">React</span>
+        <span class="chip">Spring Boot</span>
+        <span class="chip">OpenMP</span>
+        <span class="chip">MPI</span>
+        <span class="chip">Git</span>
+        <span class="chip">Linux</span>
+      </div>
+      <p class="muted">Soft skills: problem-solving, teamwork, calm under pressure, fast learner.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="muted small">© Xu Zhu · Built for GitHub Pages</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const setTheme = (dark) => { document.documentElement.dataset.theme = dark ? 'dark' : 'light'; btn.textContent = dark ? '☀️ Light' : '🌙 Dark'; };
+    setTheme(prefersDark);
+    btn.addEventListener('click', () => setTheme(document.documentElement.dataset.theme !== 'dark'));
+  </script>
+</body>
+</html>
